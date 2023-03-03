@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF1285C3-518F-4ED1-8875-F2AB1C900D6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GROUP16</RootNamespace>
+    <AssemblyName>GROUP16</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Compression.Base, Version=20.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.20.4.0.42\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=20.4460.0.42, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.20.4.0.42\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=20.4460.0.42, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.WinForms.20.4.0.42\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCustomer.designer.cs">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOrder.Designer.cs">
+      <DependentUpon>addOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSuppScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSuppScreen.designer.cs">
+      <DependentUpon>AddSuppScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colors.cs" />
+    <Compile Include="ColorType.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="EventCategory.cs" />
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingInventory.designer.cs">
+      <DependentUpon>ExistingInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic.cs" />
+    <Compile Include="InventoryOrder.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="Customer%27sPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer%27sPage.designer.cs">
+      <DependentUpon>Customer%27sPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs" />
+    <Compile Include="ordersPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ordersPage.Designer.cs">
+      <DependentUpon>ordersPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderView.Designer.cs">
+      <DependentUpon>orderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizeInventoryScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizeInventoryScreen.Designer.cs">
+      <DependentUpon>OrganizeInventoryScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaperType.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="SAD_16DataSet.cs" />
+    <Compile Include="SAD_16DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_16DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAD_16DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_16DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAD_16DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_16DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAD_16DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_16DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAD_16DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_16DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schedule.Designer.cs">
+      <DependentUpon>schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCustomer.Designer.cs">
+      <DependentUpon>searchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchEmployee.Designer.cs">
+      <DependentUpon>SearchEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendingMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendingMail.designer.cs">
+      <DependentUpon>SendingMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="ManageEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEmployee.Designer.cs">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="StickerPaper.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SuppliersScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliersScreen.designer.cs">
+      <DependentUpon>SuppliersScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlCalendar.Designer.cs">
+      <DependentUpon>UserControlCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcomeScreen.Designer.cs">
+      <DependentUpon>welcomeScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addCustomer.resx">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addOrder.resx">
+      <DependentUpon>addOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSuppScreen.resx">
+      <DependentUpon>AddSuppScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer%27sPage.resx">
+      <DependentUpon>Customer%27sPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingInventory.resx">
+      <DependentUpon>ExistingInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEmployee.resx">
+      <DependentUpon>ManageEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ordersPage.resx">
+      <DependentUpon>ordersPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderView.resx">
+      <DependentUpon>orderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizeInventoryScreen.resx">
+      <DependentUpon>OrganizeInventoryScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schedule.resx">
+      <DependentUpon>schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchCustomer.resx">
+      <DependentUpon>searchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchEmployee.resx">
+      <DependentUpon>SearchEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendingMail.resx">
+      <DependentUpon>SendingMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliersScreen.resx">
+      <DependentUpon>SuppliersScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlCalendar.resx">
+      <DependentUpon>UserControlCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcomeScreen.resx">
+      <DependentUpon>welcomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SAD_16DataSet1.xsc">
+      <DependentUpon>SAD_16DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_16DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_16DataSet1.xss">
+      <DependentUpon>SAD_16DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet2.xsc">
+      <DependentUpon>SAD_16DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_16DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_16DataSet2.xss">
+      <DependentUpon>SAD_16DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet3.xsc">
+      <DependentUpon>SAD_16DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_16DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_16DataSet3.xss">
+      <DependentUpon>SAD_16DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet4.xsc">
+      <DependentUpon>SAD_16DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_16DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_16DataSet4.xss">
+      <DependentUpon>SAD_16DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet5.xsc">
+      <DependentUpon>SAD_16DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_16DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_16DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_16DataSet5.xss">
+      <DependentUpon>SAD_16DataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע_מעודכן_מסכים_אחרים-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע_מעודכן_מסכים_אחרים-removebg-preview %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע_מעודכן_מסכים_אחרים-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע_מעודכן_מסכים_אחרים-removebg-preview %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע_מעודכן_מסכים_אחרים-removebg-preview %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע_מעודכן_מסכים_אחרים-removebg-preview %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
