@@ -1,4 +1,10 @@
 # BuisnessBuddy
+
+## TL-DR:
+Your information system gathers data on orders, employees, customers, supplies, and suppliers, and stores it in a database that you have created. This system allows you to search for and retrieve information quickly and efficiently, which can help you make better-informed decisions about your business operations.
+
+
+## Now for the patient readers:
 This Project was made for a company that needed An information system.
 this system created to collect, process, store, and disseminate information that gathers data on orders, employees, customers, supplies, and suppliers. This system allows you to search for and retrieve information from a database that I have created, which serves as a repository for all of this data.
 Let's take a closer look at each of the components in your system:
